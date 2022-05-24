@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<!-- Mirrored from www.wowlavie.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 May 2022 12:36:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="description" content="LaVie雜誌、LaVie網站，以實踐「用設計改變世界」為目標，分享與設計相關的精采內容與活動。包含全球城市、建築、平面、視覺、數位設計、生活旅遊、藝術展覽、時尚美學、人物專訪，以及國內外設計新訊！全方位蒐羅全球城市、建築、藝術、設計、文創、生活風格等最精彩資訊和相關活動。">
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="La Vie | 設計美學、生活藝術、創意風格">
+    <meta property="og:description" content="LaVie雜誌、LaVie網站，以實踐「用設計改變世界」為目標，分享與設計相關的精采內容與活動。包含全球城市、建築、平面、視覺、數位設計、生活旅遊、藝術展覽、時尚美學、人物專訪，以及國內外設計新訊！全方位蒐羅全球城市、建築、藝術、設計、文創、生活風格等最精彩資訊和相關活動。">
+    <link rel="canonical" href="index.html" />
+        <meta property="og:image" content="../wowlavie-aws.hmgcdn.com/file/ad/AD_S_20220430021124172.jpg">
+    <title>好孕百科 | Encyclopedia of Pregnancy</title>
+    <meta property="fb:app_id" content="132508173491517">
+    <meta name="alexaVerifyID" content="c3qc0n1mk1VlMPYE9ndHX1N-9n4">
+    <meta name="msvalidate.01" content="A75A836A97093B0613B8338CFD6E5DE1">
+    <link rel="short icon" href="https://www.seekpng.com/png/full/120-1206760_pregnancy-png-hd-pregnant-woman-icon.png">
+
+    <script type="text/javascript" src="js/libs/device.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="~/js/libs/html5shiv.min.js"></script><![endif]-->
+<link rel="stylesheet" href="../unpkg.com/purecss%401.0.0/build/pure-min.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css"><![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="../unpkg.com/purecss%401.0.0/build/grids-responsive-min.css"><!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="css/libs/all.min.css">
+<link type="text/css" rel="stylesheet" href="js/libs/slick/slick.css">
+<link type="text/css" rel="stylesheet" href="js/libs/slick/slick-theme.css">
+<link type="text/css" rel="stylesheet" href="css/commoncd55.css?v=20220523203644">
+
+<style>
+    .removeHref {
+        text-decoration: none;
+    }
+</style>
+
+<script type="text/javascript" src="../ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.plugins.min.js"></script>
+<script async src="../securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<script type='text/javascript'>
+    // Google Tag Manager
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TQTKZBH');
+    // End Google Tag Manager
+
+    try {
+        var w = window;
+        while (w !== w.parent) {
+            w = w.parent;
+        }
+        w.document.querySelector('.main_wapper').style.transform = 'none';
+    } catch (e) { }
+
+    function bindWayPoint(mainId, appendId, redirectPath, params) {
+        $('#' + mainId).each(function () {
+            $(this).waypoint(function (direction) {
+                if (direction == "down") {
+                    if ($('#' + appendId) != undefined) {
+                        if ($('#' + appendId)[0].innerHTML == "") {
+                            $('#' + appendId).html(" ");
+                            $.ajax({
+                                url: redirectPath,
+                                data: AddAntiForgeryToken(params),
+                                type: "POST",
+                                async: true,
+                                crossDomain: false,
+                                complete: function () {
+                                },
+                                dataType: 'html',
+                                success: function (data) {
+                                    if (data != undefined && data != "") {
+                                        $('#' + appendId).html(data);
+                                        $('.lazy').Lazy();
+                                    } else {
+                                        console.log(redirectPath + ": data is undefined");
+                                    }
+                                },
+                                error: function (xhr) {
+                                    $('#' + appendId).html("");
+                                    console.log(xhr.statusText + xhr.responseText);
+                                }
+                            });
+                        }
+                    }
+                }
+            },
+                {
+                    offset: '50%'
+                });
+        });
+    }
+
+</script>
+    <link type="text/css" rel="stylesheet" href="css/stylecd55.css?v=20220523203644">
+    <script type="text/javascript">
+    //非同步
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+
+    <meta property="fb:pages" content="168646289501">
+
+    <!-- GA CODE -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-17804710-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- GA CODE END -->
+    <!--Wowlavie insert PA code start-->
+    <script>
+        var pixDataLayer = pixDataLayer || [];
+        pixDataLayer.push({
+            pi: {
+                venue: 'wowlavie',
+            }
+        });
+    </script>
+    <!--Wowlavie insert PA code end-->
+    <!-- START Nielsen Online SiteCensus V6.0 -->
+    <script type="text/javascript" src="../cdn-gl.imrworldwide.com_443/v60.js">
+    </script>
+    <script type="text/javascript">
+        var pvar = { cid: "tw-wowlavie", content: "0", server: "secure-us" };
+        var lo_list = { "https://www.wowlavie.com/": 1 };
+        var feat = { link_overlay: (lo_list[document.location.href] || 0) };
+        var trac = nol_t(pvar, feat);
+        trac.record().post();
+    </script>
+    <noscript>
+        <div>
+            <img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=tw-wowlavie&amp;cg=0&amp;cc=1&amp;ts=noscript"
+                 width="1" height="1" alt="" />
+        </div>
+    </noscript>
+    <!-- END Nielsen Online SiteCensus V6.0 -->
+
+<meta name='dailymotion-domain-verification' content='dmbo7kzzcvpj28s3t' />
+    <script>
+
+        $(function () {
+            var params_Newest = { IsSupportWebP: 'False'};
+            var params_Section2 = { IsSupportWebP: 'False', Section1MediaId: '[&quot;AE2200787&quot;,&quot;AE2200802&quot;,&quot;AE2200799&quot;,&quot;AE2200800&quot;,&quot;AE2200786&quot;,&quot;AE2200790&quot;,&quot;AE2200769&quot;,&quot;AE2200075&quot;,&quot;AE2200775&quot;]' };
+
+            var redirectPath_SectionS2 = "/home/sections2";
+            var redirectPath_SectionS4 = "/home/sections4";
+            var redirectPath_NewBookGroup = "/home/newbookgroup";
+
+            bindWayPoint("SectionS1", "Section2", redirectPath_SectionS2, params_Section2);
+            bindWayPoint("Section2", "Section4", redirectPath_SectionS4, params_Newest);
+            bindWayPoint("index", "NewBookGroup", redirectPath_NewBookGroup, {});
+        });
+
+    </script>
+</head>
+<body>
+    <script type="application/ld+json">
+        [{
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "La Vie",
+        "alternateName": ["La Vie | 設計美學、生活藝術、創意風格","La Vie 設計美學"],
+        "url": "http://www.wowlavie.com/",
+        "keywords": ["La Vie","La Vie設計美學","La Vie | 設計美學","生活藝術","創意風格"],
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://www.wowlavie.com/tag?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+        }]
+    </script>
+    <input id="page" value="index" class="unvisible">
+    <div class="main_bg"></div>
+    <!-- header ===============-->
+
+<script type="application/ld+json">
+    [
+    {
+    "@context":"http://www.schema.org",
+    "@type":"Organization",
+    "url":"http://www.wowlavie.com/",
+    "name":"La Vie",
+    "logo":"http://www.wowlavie.com/images/logo.png"
+    }]
+</script>
+
+
+<!-- header ===============-->
+<header class="bline">
+    <div class="header-all">
+        <div class="header-content">
+            <div class="main-logo">
+                <a href="index.html" title="首頁"><img src="index_files/pregnant_logo.png
+                    " alt="好孕百科" class="pic_max_width" /></a>
+            </div>
+            <div id="toggle" class="custom-toggle">
+                <s class="bar"></s>
+                <s class="bar"></s>
+                <s class="bar"></s>
+            </div>
+            <div class="mSearch"><img src="images/search_menu.png" alt="" class="pic_max_width"></div>
+        </div>
+        <ul class="main-menu3">
+                    <li data-id='3' class="menu3_item menu3_item3">
+                        <a href="channel/city.html" title="孕期身心">
+                            <p>孕期身心</p>
+                        </a>
+                    </li>
+                    <li data-id='4' class="menu3_item menu3_item4">
+                        <a href="channel/building.html" title="保養護理">
+                            <p>保養護理</p>
+                        </a>
+                    </li>
+                    <li data-id='5' class="menu3_item menu3_item5">
+                        <a href="channel/design.html" title="分娩">
+                            <p>分娩</p>
+                        </a>
+                    </li>
+                    <li data-id='6' class="menu3_item menu3_item6">
+                        <a href="channel/fashion.html" title="哺乳">
+                            <p>哺乳</p>
+                        </a>
+                    </li>
+                    <li data-id='7' class="menu3_item menu3_item7">
+                        <a href="channel/life.html" title="坐月子">
+                            <p>坐月子</p>
+                        </a>
+                    </li>
+                    <li data-id='8' class="menu3_item menu3_item8">
+                        <a href="channel/brand.html" title="育兒教養">
+                            <p>育兒教養</p>
+                        </a>
+                    </li>
+                    <li data-id='10' class="menu3_item menu3_item10">
+                        <a href="channel/art.html" title="產檢資訊">
+                            <p>產檢資訊</p>
+                        </a>
+                    </li>
+                    <li data-id='12' class="menu3_item menu3_item12">
+                        <a href="publication.html" title="醫院/醫生">
+                            <p>醫院/醫生</p>
+                        </a>
+                    </li>
+                    <li data-id='13' class="menu3_item menu3_item13">
+                        <a href="./tutorial.html" title="使用教學">
+                            <p>使用教學</p>
+                        </a>
+                    </li>
+                    <li data-id='17' class="menu3_item menu3_item17">
+                        <a href="news.html" title="新增/審核">
+                            <p>新增/審核</p>
+                        </a>
+                    </li>
+
+        </ul>
+    </div>
+    <nav id="menu" class="header-menu">
+        <div class="menu-content">
+            <div class="search_part">
+<form action="https://www.wowlavie.com/tag" method="get">                        <div class="search_close">
+                            <s class="bar"></s>
+                            <s class="bar"></s>
+                        </div>
+                        <div class="search_input">
+                            <label for="search"></label>
+                            <input type="text" name="q" id="search" placeholder="輸入關鍵字">
+                            <input type="submit" value="" class="search_icon" onclick="return check_search();">
+                        </div>
+</form>            </div>
+            <ul class="main-menu">
+                <!-- 當前頁，在對應的class=menu_item加上active-->
+                        <li data-id='3' class="menu_item menu_item3">
+                            <a href="channel/city.html" title="孕期身心">
+                                <p>孕期身心</p>
+                            </a>
+                        </li>
+                        <li data-id='4' class="menu_item menu_item4">
+                            <a href="channel/building.html" title="保養護理">
+                                <p>保養護理</p>
+                            </a>
+                        </li>
+                        <li data-id='5' class="menu_item menu_item5">
+                            <a href="channel/design.html" title="分娩">
+                                <p>分娩</p>
+                            </a>
+                        </li>
+                        <li data-id='6' class="menu_item menu_item6">
+                            <a href="channel/fashion.html" title="哺乳">
+                                <p>哺乳</p>
+                            </a>
+                        </li>
+                        <li data-id='7' class="menu_item menu_item7">
+                            <a href="channel/life.html" title="坐月子">
+                                <p>坐月子</p>
+                            </a>
+                        </li>
+                        <li data-id='8' class="menu_item menu_item8">
+                            <a href="channel/brand.html" title="育兒教養">
+                                <p>育兒教養</p>
+                            </a>
+                        </li>
+                        <li data-id='10' class="menu_item menu_item10">
+                            <a href="channel/art.html" title="產檢資訊">
+                                <p>產檢資訊</p>
+                            </a>
+                        </li>
+                        <li data-id='12' class="menu_item menu_item12">
+                            <a href="publication.html" title="醫院/醫生">
+                                <p>醫院/醫生</p>
+                            </a>
+                        </li>
+                        <li data-id='13' class="menu_item menu_item13">
+                            <a href="./tutorial.html" title="使用教學">
+                                <p>使用教學</p>
+                            </a>
+                        </li>
+                        <li data-id='17' class="menu_item menu_item17">
+                            <a href="news.html" title="新增/審核">
+                                <p>新增/審核</p>
+                            </a>
+                        </li>
+
+                <li data-id='0' id="menu_item0" class="menu_item menu_item0"><a href="#" title="search"></a></li>
+            </ul>
+            <ul class="main-menu2">
+                <li class="menu2_item menu2_fb">
+                    <a href="https://www.facebook.com/wowlavie" title="FB" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="menu2_item menu2_ig">
+                    <a href="https://www.instagram.com/lavietw/" title="IG" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="menu2_item menu2_line">
+                    <a href="https://line.me/R/ti/p/%40hhr2014n" title="LINE" target="_blank">LINE</a>
+                </li>
+                <li class="menu2_item menu2_ytb">
+                    <a href="https://www.youtube.com/channel/UCbNJjHpu7vX2GgE2ppATvzw" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- End header ============-->
+
+<script>
+    function check_search() {
+        if ($("#search").val().trim() == "") {
+            alert("請輸入搜尋文字！");
+            return false;
+        } else {
+            //$("#searchForm").submit();
+            return true;
+        }
+    }
+</script>
+    <!-- End header ============-->
+
+    <main class="main_wapper">
+        <div class="main_content">
+            <div id="index" class="wrapper">
+                <!-- 主頻與首頁共用 每週精選=======-->
+                <div class="commonContent">
+                    <section class="sliderGroup">
+                        <div class="sliderArrowGroup">
+                            <div class="arrowLeft"><img src="images/arrowL.png" alt=""></div>
+                            <div class="arrowRight"><img src="images/arrowR.png" alt=""></div>
+                        </div>
+                        <div class="sliderIndex">
+                                    <div class="sliderItem">
+                                        <p style="text-align:center;margin:5rem 0 0.5rem">每週精選｜懷孕期間不能吃麻辣鍋，因為麻辣鍋會對寶寶造成危害？</p>
+                                        <a href="./article/article.html" target="_blank" title="" class="sliderItemContent">
+                                            <div data-src="./index_files/main.jpg" class="sliderCover lazy"></div>
+                                        </a>
+                                    </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="classificationGroup">
+                    <div class="titleGroup">
+                        <h2 class="pTitle">
+                            <a href="#" class='newArticleBtn act'>最新</a>
+                            <a href="#" class='hotArticleBtn'>熱門</a>
+                        </h2>
+                        <div class="titleLine"></div>
+                    </div>
+
+                    <div id="SectionS1" class="newArticle open">
+                    <!-- 主頻與首頁共用 END 最新========-->
+                        <div class="classificationGroup pure-g">
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200787.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/tap_shoulder.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/life.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">保養護理</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200787.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】網傳「拍孕婦肩膀易使孕婦流產」</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>23 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200802.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/papaya.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/building.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">保養護理</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200802.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】網傳「吃了木瓜，寶寶容易有黃疸」</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>22 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200799.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/crabs.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/city.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">保養護理</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200799.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】網傳「吃螃蟹會難產」？</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>23 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200800.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/母乳.jpeg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/brand.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">研究與動態</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200800.html" class="itemContentTitle">
+                                                <h2 class="pText">【查證最新動態】哺餵母乳相關查證動態</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>25 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200786.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/客服實習生.png" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/art.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">公告與新聞稿</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200786.html" class="itemContentTitle">
+                                                <h2 class="pText">【徵才】誠徵長期客服工讀生</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>26 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200790.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/fb_2022.5.9-5.15.png" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/design.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">編輯室觀測 謠言TOP10</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200790.html" class="itemContentTitle">
+                                                <h2 class="pText">【2022/5/9-2022/5/15】闢謠TOP10</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>16 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+                        <a href="newarticle.html" title="btn more" class="moreBtn">
+                            <p>看更多 More +</p>
+                        </a>
+                    </div>
+                    <div class="hotArticle">
+                    <!-- 主頻與首頁共用 END 最熱========-->
+                        <div class="classificationContent pure-g">
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200695.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/Aromatherapist.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/design.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">Podcast節目</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200695.html" class="itemContentTitle">
+                                                <h2 class="pText">【好孕愛兒生產派對 EP01】孕婦快收藏！顱薦放鬆、花精、芳療－順勢療法的運用！</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>25 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2000461.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/hospital.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/building.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">醫院/醫生</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2000461.html" class="itemContentTitle">
+                                                <h2 class="pText">【溫柔生產】寶寶在大醫院生最好嗎？</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>24 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2100811.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/ice.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/design.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">保養護理</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2100811.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】網傳「懷孕可不可以吃冰」?</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>26 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2000501.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/lie.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/building.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">保養護理</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2000501.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】「孕婦睡覺一定要左側躺」？</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>23 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200761.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/tooth_ache.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/art.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">孕期身心</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200761.html" class="itemContentTitle">
+                                                <h2 class="pText">【錯誤】網傳「懷孕牙痛只能忍到生產後」？</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>22 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="itemContentGroup classItem pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                                            <a href="article/ae2200796.html" class="itemContentCover">
+                                                <div class="itemCoverGroup">
+                                                    <div data-src="./index_files/contract.jpg" class="itemCover lazy"></div>
+                                                </div>
+                                            </a>
+                                            <a href="channel/design.html" class="itemContentClass">
+                                                <div class="itemSquare">
+                                                    <strong class="SquareText">孕期身心</strong>
+                                                </div>
+                                            </a>
+                                            <a href="article/ae2200796.html" class="itemContentTitle">
+                                                <h2 class="pText">【職場】僱主要求簽署懷孕自動離職合約是否合法？</h2>
+                                            </a>
+                                            <div class="keywordGroup">
+                                                <div class="byWho">
+                                                    <span class='byDate'>20 May 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+                        <a href="newarticle.html" title="btn more" class="moreBtn">
+                            <p>看更多 More +</p>
+                        </a>
+                    </div>
+                </section>
+
+
+                <!-- 更多主題-->
+                <div class="moreTopicGroup" id="Section2"></div>
+
+                <section class="featuredGroup">
+                    <div class="titleGroup">
+                        <h2 class="pTitle">年度專題</h2>
+                    </div>
+                    <div class="sliderGroup2">
+                        <div class="sliderArrowGroup2">
+                            <div class="arrowLeft"><img src="images/arrowL.png" alt=""></div>
+                            <div class="arrowRight"><img src="images/arrowR.png" alt=""></div>
+                        </div>
+                        <div class="sliderFeatured">
+                                            <div class="sliderItem">
+                                                <div class="itemContentGroup">
+                                                    <a href="activitydetail/ae2101513.html"
+                                                       title="" class="itemContent">
+                                                        <div class="itemCoverGroup">
+                                                            <div data-src="https://wowlavie-aws.hmgcdn.com/file/article_all/A20211022115602507.jpg " class="itemCover lazy"></div>
+                                                        </div>
+                                                        <div class="itemTextGroup">
+                                                            <h3 class="pText">票選懷孕期間，準家長們最想去的安胎景點</h3>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sliderItem">
+                                                <div class="itemContentGroup">
+                                                    <a href="activitydetail/ae2100215.html"
+                                                       title="" class="itemContent">
+                                                        <div class="itemCoverGroup">
+                                                            <div data-src="https://wowlavie-aws.hmgcdn.com/file/article_all/A20210615152715034.jpg " class="itemCover lazy"></div>
+                                                        </div>
+                                                        <div class="itemTextGroup">
+                                                            <h3 class="pText">事先打造生產計畫書，規劃理想的育嬰空間</h3>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sliderItem">
+                                                <div class="itemContentGroup">
+                                                    <a href="activitydetail/ae2100827.html"
+                                                       title="" class="itemContent">
+                                                        <div class="itemCoverGroup">
+                                                            <div data-src="https://wowlavie-aws.hmgcdn.com/file/article_all/A20210729164701559.jpg " class="itemCover lazy"></div>
+                                                        </div>
+                                                        <div class="itemTextGroup">
+                                                            <h3 class="pText">孕期仍保持浪漫，與伴侶約會的最佳景點</h3>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sliderItem">
+                                                <div class="itemContentGroup">
+                                                    <a href="activitydetail/ae2100949.html"
+                                                       title="" class="itemContent">
+                                                        <div class="itemCoverGroup">
+                                                            <div data-src="https://wowlavie-aws.hmgcdn.com/file/article_all/A20210721182340532.jpg " class="itemCover lazy"></div>
+                                                        </div>
+                                                        <div class="itemTextGroup">
+                                                            <h3 class="pText">與肚中寶寶小旅行，票選家附近的散步公園</h3>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 橫幅banner-->
+                <div class="middleBanner2">
+                    <!-- 這裡放Banner內容(bannerImg 可抽掉)-->
+                    <div class="bannerPC"></div>
+                    <div class="bannerMB"></div>
+                </div>
+
+                <div class="moreTopicGroup" id="Section4"></div>
+
+                <div id="NewBookGroup"></div>
+
+                <!-- 新刊、新書上市 End =========-->
+            </div>
+        </div>
+    </main>
+
+
+<footer>
+    <div class="footer-content">
+        <ul class="footer-menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <li data-id='1' class="footer_item footer_item1" itemprop="name">
+                <a href="home/about.html" title="關於La Vie" itemprop="url">
+                    <p>關於好孕百科</p>
+                </a>
+            </li>
+            <li data-id='2' class="footer_item footer_item2" itemprop="name">
+                <a href="home/siterule.html" title="全站條款" itemprop="url">
+                    <p style="color:orange ;">查核準則</p>
+                </a>
+            </li>
+            <li data-id='3' class="footer_item footer_item3" itemprop="name">
+                <a href="mailto:service_lavie@hmg.com.tw" title="聯絡我們" itemprop="url">
+                    <p>聯絡我們</p>
+                </a>
+            </li>
+            <li data-id='4' class="footer_item footer_item4">
+                <a href="mailto:service_lavie@hmg.com.tw" title="廣告合作">
+                    <p>廣告合作</p>
+                </a>
+            </li>
+            <li data-id='5' class="footer_item footer_item5">
+                <a href="https://www.104.com.tw/jobs/search/?ro=0&amp;keyword=%E5%9F%8E%E9%82%A6%20lavie&amp;order=1&amp;asc=0&amp;page=1&amp;mode=s&amp;jobsource=2018indexpoc" title="人力招募">
+                    <p>人力招募</p>
+                </a>
+            </li>
+        </ul>
+        <p class="footerText">Copyright © 2022 好孕百科 Encyclopedia of Pregnancy</p>
+    </div>
+</footer>
+
+<script>
+    AddAntiForgeryToken = function (data) {
+        data.__RequestVerificationToken = $('#__AjaxAntiForgeryForm input[name=__RequestVerificationToken]').val();
+        return data;
+    };
+</script>
+
+    <script src="../js.rfp.fout.jp/rfp-infeed.js"></script>
+<script type="text/javascript">RFP.InFeed.Default.run({ immediately: true })</script>
+
+<script type="text/javascript">
+    var WEB_GLOBAL = {}, WEB_MENU, pageOptions = {}
+</script>
+
+<script type="text/javascript" src="../platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src='../www.instagram.com/static/bundles/metro/EmbedSDK.js/d9addf525b6a.js'></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/libs/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script data-ad-client="ca-pub-8443633434251233" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script type="text/javascript" src="js/pagenumbercd55.js?v=20220523203644"></script>
+<script type="text/javascript" src="js/main_newcd55.js?v=20220523203644"></script>
+<script type="text/javascript" src="js/fixedBannercd55.js?v=20220523203644"></script>
+
+<script src="../js.rfp.fout.jp/rfp-infeed.js"></script>
+<script type="text/javascript">RFP.InFeed.Default.run({ immediately: true })</script>
+
+<script type="text/javascript">
+
+    var w_yahoo = (top == self) ? window : window.top, d_yahoo = w_yahoo.document;
+    w_yahoo.adUnitCode = w_yahoo.adUnitCode || [];
+    w_yahoo.adUnitCode.push("3ea6db0c-5311-4496-866b-fb0eb76b2e7e");
+    w_yahoo.apiKey = "2CJCWQ3PC57JBFMXDCR9";
+    (function () {
+        var script = d_yahoo.createElement("script");
+        script.async = true;
+        script.src = "../s.yimg.com/av/yap/ga/yap.js";
+        d_yahoo.body.appendChild(script);
+    });
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "../connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6&appId=" + 132508173491517;
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQTKZBH"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <script type="text/javascript">
+        $(function ($) {
+            $(".lazy").Lazy({
+                chainable: false,
+                visibleOnly: true,
+                delay: 1
+            });
+        });
+    </script>
+</body>
+
+<!-- Mirrored from www.wowlavie.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 May 2022 12:37:51 GMT -->
+</html>
